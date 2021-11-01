@@ -1,0 +1,88 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"attack","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDefendsPower",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "attackEnemy",
+			"inputs": [
+				{"name":"unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttackPower",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "killedAndTransfer",
+			"inputs": [
+				{"name":"unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "unitAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"unitAddress","type":"address"}
+			]
+		},
+		{
+			"name": "baseStationAdr",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"baseStationAdr","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"boun","type":"bool"},
+		{"name":"flag","type":"uint16"},
+		{"name":"value","type":"uint128"},
+		{"name":"unitAddress1","type":"address"},
+		{"components":[{"name":"strengthPower","type":"int256"},{"name":"defendsPower","type":"int256"},{"name":"lifes","type":"int256"}],"name":"playingObj","type":"tuple"},
+		{"name":"unitAddress","type":"address"},
+		{"name":"baseStationAdr","type":"address"},
+		{"components":[{"name":"strengthPower","type":"int256"},{"name":"defendsPower","type":"int256"},{"name":"lifes","type":"int256"}],"name":"archer","type":"tuple"},
+		{"name":"a","type":"uint256"}
+	]
+}

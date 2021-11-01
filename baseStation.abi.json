@@ -1,0 +1,77 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "addUnit",
+			"inputs": [
+				{"name":"unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "removeUnit",
+			"inputs": [
+				{"name":"unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"attack","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "killedAndTransfer",
+			"inputs": [
+				{"name":"unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDefendsPower",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "units",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"units","type":"map(address,address)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"boun","type":"bool"},
+		{"name":"flag","type":"uint16"},
+		{"name":"value","type":"uint128"},
+		{"name":"unitAddress1","type":"address"},
+		{"components":[{"name":"strengthPower","type":"int256"},{"name":"defendsPower","type":"int256"},{"name":"lifes","type":"int256"}],"name":"playingObj","type":"tuple"},
+		{"name":"units","type":"map(address,address)"}
+	]
+}
